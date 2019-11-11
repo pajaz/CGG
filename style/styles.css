@@ -118,7 +118,7 @@ nav {
 .bg-mid {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 25vh);
+    min-height: 75vh;
     left: 0;
     top: 0;
     background: url("../resources/background1.jpg");
@@ -129,10 +129,8 @@ footer {
     position: fixed;
     width: 100%;
     text-align: center;
-    height: 100px;
-    max-height: 100px;
-    z-index: 3;
-    
+    height: 5rem;
+    max-height: 5rem;
 }
 
 /* Eri laitekoot */
@@ -143,7 +141,7 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -168,3 +166,4 @@ footer {
 @media only screen and (min-width: 1200px) {
 
 }
+/*Testi */
