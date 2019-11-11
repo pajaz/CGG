@@ -55,7 +55,8 @@ h1 {
 
 
 #logo {
-    max-height: 60px;
+    box-sizing: border-box;
+    max-height: 65px;
     position: absolute;
     top: 5px;
     left: 45%;
@@ -92,19 +93,14 @@ nav {
     text-align: center;
 }
 
-.left-nav {
-    float: left;
-}
-
-.right-nav {
-    float: right;
-}
-
 .content-box {
     position: absolute;
     background-color: black;
     color: burlywood;
     text-align: center;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
     opacity: 0.6;
     border-radius: 10px;
     padding: 20px;
@@ -130,6 +126,7 @@ footer {
     position: relative;
     width: 100%;
     text-align: center;
-    min-height: 200px;
+    max-height: 25%;
+    z-index: 3;
    /* bottom:0;*/
 }
