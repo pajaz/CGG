@@ -71,6 +71,11 @@ html body {
     padding: 0;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 nav {
     position: sticky;
     text-align: center;
@@ -113,20 +118,21 @@ nav {
 .bg-mid {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 268px);
+    min-height: calc(100vh - 25vh);
     left: 0;
     top: 0;
-    background: black;
-    
+    background: url("../resources/background1.jpg");
+    background-position-y: 45%;
 }
 
 footer {
-    position: relative;
+    position: fixed;
     width: 100%;
     text-align: center;
-    max-height: 25%;
+    height: 100px;
+    max-height: 100px;
     z-index: 3;
-   /* bottom:0;*/
+    
 }
 
 /* Eri laitekoot */
@@ -146,6 +152,10 @@ footer {
         width: 75%;
         left: 10%;
         right: 15%;
+    }
+
+    footer {
+        max-height: 10%;
     }
 }
 
