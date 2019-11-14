@@ -128,6 +128,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: 100%;
     color: lightgray;
+    z-index: 4;
 }
 
 nav ul li ul {
@@ -139,7 +140,7 @@ nav ul li:hover ul {
     display:block;
     position:relative;
     color: lightgray;
-
+    z-index: 4;
 }
 
 /* END OF TESTING */
