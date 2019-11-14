@@ -121,6 +121,7 @@ nav ul li a {
     width: 125px;
     color: burlywood;
     text-decoration: none;
+    z-index: 6
 }
 
 nav ul li a:hover {
@@ -219,7 +220,7 @@ footer {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px up to 1200px) */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     
 
