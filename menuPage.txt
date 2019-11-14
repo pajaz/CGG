@@ -1,96 +1,14 @@
 
 <h1>Menu</h1>
 <div class="button-row">
-    <button>À La Carte</button>
-    <button>Lounas</button>
-    <button>Juomat</button>
+    <button id="alacarte" onclick="getContent('alacartePage', '2')">À La Carte</button>
+    <button id="lunch" onclick="getContent('lunchPage', '2')">Lounas</button>
+    <button id="drinks" onclick="getContent('drinkPage', '2')">Juomat</button>
 </div>
-<div>
-    <table>
-        <caption>Alkuruoat ja Snacksit</caption>
-        <tr>
-            <td class="menu-item">Ruoka 1</th>
-            <td class="menu-price">8,90€</td>
-        </tr>
-        <tr class="explanation">
-            <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-        </tr>
-        <tr>
-            <td class="menu-item">Ruoka 2</th>
-            <td class="menu-price">11,90€</td>
-        </tr>
-        <tr class="explanation">
-            <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-        </tr>
-        <tr>
-            <td class="menu-item">Ruoka 3</th>
-            <td class="menu-price">10,90€</td>
-        </tr>
-        <tr class="explanation">
-            <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-        </tr>
-        <tr>
-            <td class="menu-item">Ruoka 4</th>
-            <td class="menu-price">10,90€</td>
-        </tr>
-        <tr class="explanation">
-            <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-        </tr>
-        </table>
-        <table>
-            <caption>Pääruoat</caption>
-            <tr>
-                <td class="menu-item">Ruoka 1</th>
-                <td class="menu-price">8,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-            </tr>
-            <tr>
-                <td class="menu-item">Ruoka 2</th>
-                <td class="menu-price">11,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-            </tr>
-            <tr>
-                <td class="menu-item">Ruoka 3</th>
-                <td class="menu-price">10,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-            </tr>
-            <tr>
-                <td class="menu-item">Ruoka 4</th>
-                <td class="menu-price">10,90€</td>
-            </tr>
-            <tr class="explanation" >
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <caption>Jälkiruoat</caption>
-            <tr>
-                <td class="menu-item">Ruoka 1</th>
-                <td class="menu-price">8,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item explained">Raaka-aineet ja valmistustavat</td>
-            </tr>
-            <tr>
-                <td class="menu-item">Ruoka 2</th>
-                <td class="menu-price">11,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-            </tr>
-            <tr>
-                <td class="menu-item">Ruoka 3</th>
-                <td class="menu-price">10,90€</td>
-            </tr>
-            <tr class="explanation">
-                <td class="menu-item">Raaka-aineet ja valmistustavat</td>
-        </table>
+<div id="content2">
+    <script>
+        checkState()    
+    </script>
+</div>
     
 </div>

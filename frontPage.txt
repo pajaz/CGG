@@ -3,6 +3,6 @@
 <p>Tervetuloa viihtymään</p> 
 
 <p>Maistuvan ruoan ja laadukkaiden oluiden merkeissä!</p>
-<button>Menu</button>
-<button>Lounas</button>
-<button>Catering</button>
+<button onclick="getContent('menuPage', '1', 'alacartePage')">Menu</button>
+<button onclick="getContent('menuPage', '1', 'lunchPage')">Lounas</button>
+<button onclick="getContent('cateringPage', '1')">Catering</button>

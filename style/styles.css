@@ -27,6 +27,10 @@ button {
     padding: 10px; 
 }
 
+button:focus {
+    color: burlywood;
+}
+
 h1 {
     font-family: Georgia;
 }
@@ -66,6 +70,10 @@ h1 {
 
 table {
     width: 100%;
+    color: lightgray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: solid burlywood 2px;
 }
 
 .explanation {
@@ -82,6 +90,9 @@ tr {
      display: inline-block;
  }
 
+.button-row {
+    margin-bottom: 10px;
+}
 
 #logo {
     box-sizing: border-box;

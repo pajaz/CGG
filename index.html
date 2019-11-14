@@ -8,26 +8,26 @@
         <script src="./javascript/jquery/jquery-3.4.1.js"></script>
         <script src="./javascript/javascript.js"></script>
     </head>
-    <body onload="getContent('frontPage')">
+    <body onload="getContent('frontPage', '1')">
         <div id="page-container">
             <nav id="nav-menu">
                 <ul>
                     <li><a href="#">Menu <span style="font-size: small;">▼</span></a>
                         <ul>
                             <li>
-                                <a href="javascript:getContent('frontPage');">Etusivu</a>
+                                <a href="javascript:getContent('frontPage', '1');">Etusivu</a>
                             </li>
                             <li>
-                                <a href="javascript:getContent('menuPage');">Menu</a>
+                                <a href="javascript:getContent('menuPage', '1');">Menu</a>
                             </li>
                             <li>
-                                <a href="javascript:getContent('bookTable');">Pöytävaraus</a>
+                                <a href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
                             </li>
                             <li>
-                                <a href="javascript:getContent('companyPage');">Yhtiö</a>
+                                <a href="javascript:getContent('companyPage', '1');">Yhtiö</a>
                             </li>
                             <li>    
-                                <a href="javascript:getContent('cateringPage');">Catering</a>
+                                <a href="javascript:getContent('cateringPage', '1');">Catering</a>
                             </li>
                         </ul>
                     </li>
@@ -36,20 +36,20 @@
             <nav id="nav-menu-large">
                 
 
-                <a class="nav-left" href="javascript:getContent('menuPage');">Menu</a>
+                <a class="nav-left" href="javascript:getContent('menuPage', '1');">Menu</a>
 
-                <a class="nav-left" href="javascript:getContent('bookTable');">Pöytävaraus</a>
+                <a class="nav-left" href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
 
-                <a class="nav-right" href="javascript:getContent('companyPage');">Yhtiö</a>
+                <a class="nav-right" href="javascript:getContent('companyPage', '1');">Yhtiö</a>
 
-                <a class="nav-right" href="javascript:getContent('cateringPage');">Catering</a>
+                <a class="nav-right" href="javascript:getContent('cateringPage', '1');">Catering</a>
             </nav>
 
             <div id="logo"> 
-                <a href="javascript:getContent('frontPage');"><img style="max-height: 60px;"  src="resources/logo.png" alt=""></a>
+                <a href="javascript:getContent('frontPage', '1');"><img style="max-height: 60px;"  src="resources/logo.png" alt=""></a>
             </div>
             <div class="bg-mid">
-                    <div  id="content" class="content-box">
+                    <div  id="content1" class="content-box">
             
                     </div>
                    <!-- <img id="bg" src="resources/background1.jpg" alt="whoops">-->
