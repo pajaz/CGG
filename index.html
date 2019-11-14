@@ -10,22 +10,54 @@
     </head>
     <body onload="getContent('frontPage')">
         <div id="page-container">
-            <nav>
-                <div class="left-nav-container block">
-                    <a class="left-nav" href="javascript:getContent('frontPage');">Etusivu</a>
-                    <a class="left-nav" href="javascript:getContent('menuPage');">Menu</a>
-                    <a class="left-nav" href="javascript:getContent('bookTable');">Pöytävaraus</a>
-                </div>
-                <div class="right-nav-container block">
-                        <a class="right-nav" href="javascript:getContent('companyPage');">Yhtiö</a>
-                    <a class="right-nav" href="javascript:getContent('cateringPage');">Catering</a>
-                </div>        
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Menu <span style="font-size: small;">▼</span></a>
+                        <ul>
+                            <li>
+                                <a href="javascript:getContent('frontPage');">Etusivu</a>
+                            </li>
+                            <li>
+                                <a href="javascript:getContent('menuPage');">Menu</a>
+                            </li>
+                            <li>
+                                <a href="javascript:getContent('bookTable');">Pöytävaraus</a>
+                            </li>
+                            <li>
+                                <a href="javascript:getContent('companyPage');">Yhtiö</a>
+                            </li>
+                            <li>    
+                                <a href="javascript:getContent('cateringPage');">Catering</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
+            <nav id="nav-menu-large">
+                
+
+                <a class="nav-left" href="javascript:getContent('menuPage');">Menu</a>
+
+                <a class="nav-left" href="javascript:getContent('bookTable');">Pöytävaraus</a>
+
+                <a class="nav-right" href="javascript:getContent('companyPage');">Yhtiö</a>
+
+                <a class="nav-right" href="javascript:getContent('cateringPage');">Catering</a>
+            </nav>
+
             <div id="logo"> 
-                <img style="max-height: 60px;" src="resources/logo.png" alt="">
+                <a href="javascript:getContent('frontPage');"><img style="max-height: 60px;"  src="resources/logo.png" alt=""></a>
             </div>
             <div class="bg-mid">
                     <div  id="content" class="content-box">
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                     </div>
                    <!-- <img id="bg" src="resources/background1.jpg" alt="whoops">-->
             </div>
