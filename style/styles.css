@@ -137,7 +137,7 @@ nav ul li ul {
 nav ul li:hover ul {
     height: 60px;
     display:block;
-    position:absolute;
+    position:relative;
     color: lightgray;
 
 }
