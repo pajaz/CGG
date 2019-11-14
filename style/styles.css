@@ -47,12 +47,12 @@ h1 {
 }
 
 .menu-item {
-    float: left;
+    text-align: left;
     margin-left: 5px;
 }
 
 .menu-price {
-    float: right;
+    text-align: right;
     margin-right: 5px;
 }
 
@@ -60,6 +60,11 @@ h1 {
     object-fit: none;
     max-height: calc(100vh - 268px);
     width: 100%;
+}
+
+/* Tables properties */
+td {
+
 }
 
 /* containers */
