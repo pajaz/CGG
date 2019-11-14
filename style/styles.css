@@ -63,6 +63,11 @@ h1 {
 }
 
 /* Tables properties */
+
+table {
+    width: 100%;
+}
+
 .explanation {
     font-size: smaller;
     height: 20px;
