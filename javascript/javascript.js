@@ -51,9 +51,19 @@ function setButtonFocus(bb) {
 function setBackground() {
     $(function() {
         var body = $(".bg-mid");
-        var backgrounds = [
-          'url(../resources/background1.jpg)', 
-          'url(../resources/background2.jpg)'];
+
+        if($(window).width() <= 427) {
+            var backgrounds = [
+                'url(../resources/bg-mobile1.jpg)'];
+        } else if($(window).width() <= 979) {
+            var backgrounds = [
+                'url(../resources/bg-medium1.jpg)'];
+        } else {
+            var backgrounds = [
+                'url(../resources/background1.jpg)', 
+                'url(../resources/background2.jpg)',
+                'url(../resources/background3.jpg)'];
+        }
           console.log(backgrounds)
         var current = 0;
         function nextBackground() {
