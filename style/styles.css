@@ -63,7 +63,7 @@ h1 {
     top: 5px;
     left: 50%;
     transform: translate(-50%);
-    z-index: 9999;
+    z-index: 4;
     text-align: center;
 }
 
@@ -100,7 +100,7 @@ nav {
     padding-left: 27%;
     padding-right: 0;
     display: block;
-   
+    z-index: 3;
    
 }
 
