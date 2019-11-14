@@ -1,6 +1,6 @@
 
 function getContent(page) {
-    var cnt = page + ".html"
+    var cnt = page + ".txt"
 
     console.log(cnt)
     $(document).ready(function() {
