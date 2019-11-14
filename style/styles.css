@@ -39,9 +39,21 @@ h1 {
     margin-right: 10px;
 }
 
+/* fonts and text props */
+
 .font-content {
     color: lightgray;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-item {
+    float: left;
+    margin-left: 5px;
+}
+
+.menu-price {
+    float: right;
+    margin-right: 5px;
 }
 
 #bg {
