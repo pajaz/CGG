@@ -63,8 +63,13 @@ h1 {
 }
 
 /* Tables properties */
-td {
-    height: 30;
+.explanation {
+    font-size: smaller;
+    height: 20px;
+}
+
+tr {
+    height: 30px;
 }
 
 /* containers */
