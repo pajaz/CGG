@@ -8,8 +8,7 @@
         <script src="./javascript/jquery/jquery-3.4.1.js"></script>
         <script src="./javascript/javascript.js"></script>
     </head>
-    <body onload="getContent('frontPage', '1')">
-        <script id="bg-large">setBackground()</script>
+    <body onload="getContent('frontPage', '1'); setBackground()">
         <div id="page-container">
             <nav id="nav-menu">
                 <ul>
@@ -41,7 +40,7 @@
 
                 <a class="nav-left" href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
 
-                <a class="nav-right" href="javascript:getContent('companyPage', '1');">Yhtiö</a>
+                <a class="nav-right last-item" href="javascript:getContent('companyPage', '1');">Yhtiö</a>
 
                 <a class="nav-right" href="javascript:getContent('cateringPage', '1');">Catering</a>
             </nav>

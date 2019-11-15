@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: burlywood;
     background-color: black;
+    min-width: 320px;
 }
 
 .title {
@@ -15,6 +16,10 @@ a {
     font-size: large;
     text-decoration-line: none;
     padding-right: 15px;
+}
+
+.last-item {
+    padding-right: 0;
 }
 
 button {
@@ -115,6 +120,7 @@ html body {
 #page-container {
     position: relative;
     min-height: 100vh;
+    max-height: 100%;
 }
 
 /* NAVIGATION MENU */
@@ -238,42 +244,9 @@ footer {
     footer {
         max-height: 10%;
     }
-
-    
 }
 
-@media only screen and (max-width: 479px) {
-    nav {
-        padding-left: 0%;
-        padding-right: 5%;
-        
-    }
-    nav ul {
-        text-align: right;
-    }
-
-    #logo {
-        margin-left: 5px;
-        transform: translate(0);
-        left: 0;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 979px) {
-    nav {
-       padding-left: 8%; 
-       
-    }
-}
-
-/* Large devices (laptops/desktops, 992px up to 1200px) */
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
-    
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 480px) {
     #nav-menu {
         display: none;
     }
@@ -290,8 +263,8 @@ footer {
         height: 65px;
         max-height: 65px;
         padding-top: 20px;
-        padding-left: 28%;
-        padding-right: 30%;
+        padding-left: 1%;
+        padding-right: 2%;
     }
     .nav-left {
         float: left;
@@ -300,7 +273,70 @@ footer {
     .nav-right {
         float: right;
     }
+}
+
+@media only screen and (max-width: 479px) {
+    nav {
+        padding-left: 1%;
+        padding-right: 1%;
+        
+    }
+    nav ul {
+        text-align: right;
+    }
+
+    #logo {
+        margin-left: 5px;
+        transform: translate(0);
+        left: 0;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    
+    .content-box {
+        top: 1%;
+    }
+    .content-box p {
+        font-size: medium;
+    }
+    .content-box h1 {
+        font-size: large;
+    }
+    .button {
+        font-size: medium;
+    }
+    .bg-mid {
+        min-height: 65vh;
+    }
+
+    footer {
+        font-size: x-small;
+    }
 
 }
-/*Testi */
+
+@media only screen and (min-width: 480px) and (max-width: 979px) {
+   a {
+       font-size: medium;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px up to 1200px) */
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+
+    nav {
+        padding-left: 23%;
+        padding-right: 25%;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    nav {
+        padding-left: 28%;
+        padding-right: 30%;
+    }
+}
 
