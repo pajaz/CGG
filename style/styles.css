@@ -215,6 +215,7 @@ nav ul li:hover ul {
     min-height: 75vh;
     left: 0;
     top: 0;
+    background-size: contain cover;
    /* background: url("../resources/background1.jpg");*/
     /*background-position-y: 45%;*/
     transition: background-image 1s ease-in;
@@ -302,6 +303,10 @@ footer {
     }
     .content-box h1 {
         font-size: large;
+    }
+
+    table td {
+        font-size: small;
     }
     .button {
         font-size: medium;

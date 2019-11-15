@@ -67,14 +67,20 @@ function setBackground() {
           console.log(backgrounds)
         var current = 0;
         function nextBackground() {
-            body.css(
-                'background',
-            backgrounds[current = ++current % backgrounds.length]);
+            body.css({
+                    'background':
+                    backgrounds[current = ++current % backgrounds.length],
+                    'background-size':
+                    'cover'
+                 });
     
             setTimeout(nextBackground, 10000);
         }
         setTimeout(nextBackground, 10000);
-        body.css('background', backgrounds[0]);
+        body.css({'background': backgrounds[0],
+                  'background-size':
+                  'cover'
+                });
     });
 
 }
