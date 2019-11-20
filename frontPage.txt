@@ -1,8 +1,8 @@
 
 <h1>Craft & Grub</h1>
-<p>Tervetuloa viihtymään</p> 
+<p>Tervetuloa viihtymään!</p> 
 
-<p>Maistuvan ruoan ja laadukkaiden oluiden merkeissä!</p>
+<p>sample text sample text sample text sample text!</p>
 <button onclick="getContent('menuPage', '1', 'alacartePage')">À La Carte</button>
 <button onclick="getContent('menuPage', '1', 'lunchPage')">Lounas</button>
 <button onclick="getContent('cateringPage', '1')">Catering</button>
