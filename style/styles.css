@@ -182,7 +182,6 @@ nav ul {
 }
 
 nav ul li {
-    
     display: block;
     position: relative;
     z-index: 6;
@@ -205,12 +204,12 @@ nav ul li a:hover {
 }
 
 nav ul li ul {
-    
+
     display:none;
 }
 nav ul li:hover ul {
     height: 60px;
-    display:block;
+    /*display:block;*/
     position:relative;
     color: lightgray;
     z-index: 6;
