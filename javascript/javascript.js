@@ -117,6 +117,16 @@ function getWeekDay(d) {
     return weekday[date.getDay()]
 }
 
+$(function(){
+    $(".menuitem").click(function(){
+        $("#menu").hide();
+    });
+});
 
+$(function(){
+    $("#toggle-menu").click(function(){
+        $("#menu").slideToggle("fast");
+    });
+});
 
 
