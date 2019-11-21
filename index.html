@@ -6,10 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/styles.css">
         <script src="./javascript/jquery/jquery-3.4.1.js"></script>
+        
         <script src="./javascript/javascript.js"></script>
+        
     </head>
-    <body onload="getContent('frontPage', '1')">
-        <script id="bg-large">setBackground()</script>
+    <body>
         <div id="page-container">
             <nav id="nav-menu">
                 <ul>
@@ -35,8 +36,6 @@
                 </ul>
             </nav>
             <nav id="nav-menu-large">
-                
-
                 <a class="nav-left" href="javascript:getContent('menuPage', '1');">Menu</a>
 
                 <a class="nav-left" href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
@@ -51,9 +50,7 @@
             </div>
             <div class="bg-mid">
                     <div  id="content1" class="content-box">
-            
                     </div>
-                   <!-- <img id="bg" src="resources/background1.jpg" alt="whoops">-->
             </div>
             <footer class="font-content">
                 Jokukatu 1, 00500 Helsinki<br>
@@ -63,6 +60,8 @@
                 email: cgg@cgg.fi
             </footer>
         </div>
+        <script id="bg-large">setBackground()</script>
+        <script>getContent('frontPage', '1')</script>
     </body>
 
 
