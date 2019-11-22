@@ -1,12 +1,12 @@
 var state = "none"
 
 function getContent(page, divid, menu) {
-    var cnt = page + ".html"
+    var cnt = page + ".txt"
         id = "#content" + divid
     
     if (divid=="2") {
-        document.getElementById(page.substring(0, page.length-4)).focus()
-      
+        console.log(menu + " Onko olemassa")
+        setButtonFocus(page)
     }
 
     console.log(id)
@@ -31,8 +31,21 @@ function checkState() {
 }
 
 function setButtonFocus(bb) {
-    document.getElementById(bb).focus()
-    
+    var b = bb
+
+    console.log(b + " TEST")
+    switch (b) {
+        case "alacartePage":
+            document.getElementById("alacarte").focus()
+            break;
+        case "lunchPage":
+            document.getElementById("lunch").focus()
+            break;
+        case "drinkPage":
+            document.getElementById("drink").focus()
+            break;
+
+    }
 }
 
 function setBackground() {
@@ -54,16 +67,20 @@ function setBackground() {
           console.log(backgrounds)
         var current = 0;
         function nextBackground() {
-            body.css(
-                'background',
-            backgrounds[current = ++current % backgrounds.length]);
-            body.css('background-size', 'cover')
+            body.css({
+                    'background':
+                    backgrounds[current = ++current % backgrounds.length],
+                    'background-size':
+                    'cover'
+                 });
+    
             setTimeout(nextBackground, 10000);
         }
         setTimeout(nextBackground, 10000);
-        
-        body.css('background', backgrounds[0]);
-        body.css('background-size', 'cover')
+        body.css({'background': backgrounds[0],
+                  'background-size':
+                  'cover'
+                });
     });
 
 }
@@ -129,4 +146,8 @@ $(function(){
     });
 });
 
-
+$(function(){
+    $("#approve").click(function(){
+        $("#welcomebox").hide();
+    });
+});
