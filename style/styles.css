@@ -172,7 +172,7 @@ html {
 #map {
     box-sizing: border-box;
     margin: 12.5%;
-    height: 200px;
+    height: 300px;
     width: 75%;
     opacity: 1; 
 }
