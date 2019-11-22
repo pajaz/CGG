@@ -1,7 +1,7 @@
 var state = "none"
 
 function getContent(page, divid, menu) {
-    var cnt = page + ".html"
+    var cnt = "/views/" + page + ".html"
         id = "#content" + divid
     
     if (divid=="2") {
