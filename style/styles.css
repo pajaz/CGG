@@ -145,8 +145,6 @@ html body {
     width: 100%;
     margin: 0;
     padding: 0;
-<<<<<<< Updated upstream
-=======
     overflow: hidden;
 }
 
@@ -160,7 +158,6 @@ html {
     height: 200px;
     width: 75%;
     opacity: 1; 
->>>>>>> Stashed changes
 }
 
 #page-container {
@@ -257,28 +254,6 @@ nav ul li:hover ul {
 
 /* END OF TESTING */
 
-<<<<<<< Updated upstream
-.content-box {
-    position: absolute;
-    background-color: black;
-    color: burlywood;
-    text-align: center;
-    word-wrap: break-word;
-    white-space: normal;
-    opacity: 0.6;
-    border-radius: 10px;
-    padding: 20px;
-    padding-bottom: 30px;
-    margin-bottom: 5%;
-    z-index: 2;
-    top: 15%;
-    left: 30%;
-    right: 30%;
-    
-}
-=======
-
->>>>>>> Stashed changes
 
 .bg-mid {
     position: relative;

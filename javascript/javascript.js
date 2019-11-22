@@ -83,9 +83,6 @@ function setBackground() {
                 });
     });
 
-<<<<<<< Updated upstream
-}
-=======
 }
 
 function getLunchHeading(id) {
@@ -154,4 +151,3 @@ $(function(){
         $("#welcomebox").hide();
     });
 });
->>>>>>> Stashed changes
