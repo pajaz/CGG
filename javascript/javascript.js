@@ -117,7 +117,7 @@ function getWeekDay(d) {
 
 $(function(){
     $(".menuitem").click(function(){
-        $("#menu").hide();
+        $("#menu").slideToggle("fast");
     });
 });
 
