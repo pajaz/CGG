@@ -9,6 +9,7 @@ function getContent(page, divid, menu) {
     }
 
     console.log(id)
+    console.log("state " + state)
     $(document).ready(function() {
         $(id).load(cnt);
     });
