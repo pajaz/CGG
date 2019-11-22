@@ -8,31 +8,31 @@
         <script src="./javascript/jquery/jquery-3.4.1.js"></script>
         <script src="./javascript/javascript.js"></script>
     </head>
-    <body scroll="no" onload="getContent('frontPage', '1'); setBackground()">
+    <body scroll="no">
         <div id="page-container">
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#">Menu <span style="font-size: small;">▼</span></a>
-                        <ul>
-                            <li>
-                                <a href="javascript:getContent('frontPage', '1');">Etusivu</a>
-                            </li>
-                            <li>
-                                <a href="javascript:getContent('menuPage', '1');">Menu</a>
-                            </li>
-                            <li>
-                                <a href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
-                            </li>
-                            <li>
-                                <a href="javascript:getContent('companyPage', '1');">Yhtiö</a>
-                            </li>
-                            <li>    
-                                <a href="javascript:getContent('cateringPage', '1');">Catering</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+                    <li><a id="toggle-menu" href="#"><img style="max-width: 50px;" src="/resources/navicon.png"></a>
+                        <ul id="menu">
+                                <li>
+                                    <a class="menuitem" href="javascript:getContent('frontPage', '1');">Etusivu</a>
+                                </li>
+                                <li>
+                                    <a class="menuitem" href="javascript:getContent('menuPage', '1');">Menu</a>
+                                </li>
+                                <li>
+                                    <a class="menuitem" href="javascript:getContent('bookTable', '1');">Pöytävaraus</a>
+                                </li>
+                                <li>
+                                    <a class="menuitem" href="javascript:getContent('companyPage', '1');">Yhtiö</a>
+                                </li>
+                                <li>    
+                                    <a class="menuitem" href="javascript:getContent('cateringPage', '1');">Catering</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             <nav id="nav-menu-large">
                 
 
@@ -75,6 +75,8 @@
                 email: cgg@cgg.fi
             </footer>
         </div>
+        <script id="bg-large">setBackground()</script>
+        <script>getContent('frontPage', '1')</script>
     </body>
 
 

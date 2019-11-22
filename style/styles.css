@@ -41,10 +41,23 @@ button {
 
 button:focus {
     color: burlywood;
+    outline-color: lightgray;
 }
 
 h1 {
     font-family: Georgia;
+}
+
+img.social-media {
+    display: inline-block;
+    width: 10%;
+}
+
+div.social-media {
+    float: right;
+    padding-right: 20px;
+    max-height: 10%;
+    width: 50%;
 }
 
 #nav-logo {
@@ -86,6 +99,10 @@ table {
     margin-bottom: 10px;
     margin-top: 10px;
     border-bottom: solid burlywood 2px;
+}
+
+table.last {
+    border-bottom: none;
 }
 
 .explanation {
@@ -246,7 +263,7 @@ nav ul li ul {
 }
 nav ul li:hover ul {
     height: 60px;
-    display:block;
+    /*display:block;*/
     position:relative;
     color: lightgray;
     z-index: 6;
@@ -286,8 +303,8 @@ footer {
 @media only screen and (max-width: 979px) {
     .content-box {
         width: 75%;
-        left: 10%;
-        right: 15%;
+        left: 7.5%;
+        right: 0;
     }
 
 }
