@@ -279,11 +279,13 @@ nav ul li:hover ul {
 
 .formHolder {
     box-sizing: border-box;
-    margin-left: 20%;
-    margin-right: 20%;
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
     border: solid lightgray 2px;
     text-align: left;
     padding: 10px 5px 10px 5px;
+    width: fit-content;
 }
 
 label {
@@ -298,6 +300,7 @@ input {
 
 select {
     margin: 2.5px;
+    font-size: calc(0.5em + 0.5vw);
     width: fit-content;
 }
 
@@ -351,6 +354,7 @@ footer {
         left: 7.5%;
         right: 0;
     }
+   
 
 }
 
@@ -402,6 +406,8 @@ footer {
     footer {
         font-size: medium;
     }
+    
+    
 }
 
 @media only screen and (max-height: 400px) {
