@@ -278,11 +278,12 @@ nav ul li:hover ul {
 /* Lomakkeet */
 
 .formHolder {
+    box-sizing: border-box;
     margin-left: 20%;
     margin-right: 20%;
     border: solid lightgray 2px;
     text-align: left;
-    padding: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
 }
 
 label {
@@ -295,16 +296,26 @@ input {
     max-width: calc(100% - 10px);
 }
 
+select {
+    margin: 2.5px;
+    width: fit-content;
+}
+
 textarea {
     margin: 2.5px;
     width: calc(100% - 10px);
     max-width: calc(100% - 10px);
+    height: 85px;
+    max-height: 85px;
+    resize: none;
 }
 
 .inlineInput {
     display: inline-block;
     width: 30px;
 }
+
+/* End forms */
 
 .bg-mid {
     position: relative;

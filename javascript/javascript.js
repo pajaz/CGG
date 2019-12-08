@@ -81,6 +81,7 @@ function getLunchHeading(id) {
     
 }
 
+// Hakee kuluvan viikon maanantain
 function getMonday(d) {
     d = new Date(d);
     var day = d.getDay(),
@@ -114,6 +115,65 @@ function getWeekDay(d) {
     date =  new Date(d)
 
     return weekday[date.getDay()]
+}
+
+function daysInMonth (month, year) { 
+    console.log(new Date(year, month, 0).getDate())
+    return new Date(year, month, 0).getDate()
+}
+
+
+function createFormInputList(id, formName) {
+    var dateNow = new Date()
+        optionsMonths = Array.from(Array(12), (_,x) => x+1)
+        optionsDays = Array.from(Array(daysInMonth((dateNow.getMonth() + 1), dateNow.getFullYear())), (_,x) => x + 1)
+        optionsYears = [dateNow.getFullYear(), dateNow.getFullYear() + 1]
+        optionsHours = Array.from(Array(24), (_,x) => x)
+        optionsMinutes = ["00", "15", "30", "45"]
+        options = [optionsMinutes,optionsHours, optionsYears, optionsMonths, optionsDays]
+        ids = ["minutes", "hours", "years", "months", "days"]
+        next = "viesti"
+
+    for (var i = 0; i<ids.length; i++) {
+        var list = document.createElement('select')
+
+        list.id = ids[i]
+        list.name = ids[i]
+
+        options[i].map(a => {
+            var o = document.createElement("option")
+            o.value = a
+            o.text = a
+            list.appendChild(o)   
+        });
+
+        var form = document.getElementById(formName)
+        var submit = document.getElementById(next)
+        console.log("Testi " + submit.id)
+        form.insertBefore(list, submit)
+        next = list.id
+ 
+    }
+    document.getElementById("months").value = (dateNow.getMonth() + 1)
+    document.getElementById("days").value = dateNow.getDate()
+}
+
+function changeDropdownDays(month, year) {
+    var days = Array.from(Array(daysInMonth(month, year)), (_,x) => x + 1)
+    $("#days").empty();
+    var list = document.getElementById("days")
+    days.map(a => {
+        var o = document.createElement("option")
+        o.value = a
+        o.text = a
+        list.appendChild(o)   
+    });
+}
+
+function changeDropdownValue(menu, month, year) {
+    console.log(menu + " " + month + " " + year)
+    var day = daysInMonth((month), year)
+    document.getElementById(menu).value = day
 }
 
 $(function(){

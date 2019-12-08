@@ -4,7 +4,7 @@
     <p>Saat varausvahvistuksen tekstiviestillä</p>
     <p>Yli kahdeksan hengen varaukset vain puhelimitse</p>
     <div class="formHolder">
-        <form>
+        <form id="bookTable">
             <label>Nimi</label>
             <input type="text" placeholder="Nimi">
             <label>Puhelinnumero</label>
@@ -12,14 +12,28 @@
             <label>Email</label>
             <input type="email" placeholder="esimerkki@esimerkki.xx">
             <label>Päivämäärä ja kellonaika</label>
-            <input class="inlineInput" type="number" value="1" min="1" max="31">
-            <input class="inlineInput" type="number" value="1" min="1" max="12">
-            <input class="inlineInput" style="width: 60px;" value="2019" min="2019" max="2020" type="number">
-            <input class="inlineInput" type="number" value="0" min="0" max="23">
-            <input class="inlineInput" type="number" value="0" min="0" max="60">
-            <label>Viesti</label>
+            <!--
+            <input id="paivat" class="inlineInput" type="number" value="1" min="1" max="31">
+            <input id="kuukaudet" class="inlineInput" type="number" value="1" min="1" max="12">
+            <input id="vuodet" class="inlineInput" style="width: 60px;" value="2019" min="2019" max="2020" type="number">
+            <input id="tunnit" class="inlineInput" type="number" value="0" min="0" max="23">
+            <input id="minuutit" class="inlineInput" type="number" value="0" min="0" max="60">
+            -->
+            <label id="viesti">Viesti</label>
             <textarea maxlength="200" placeholder="Maksimipituus 200 merkkiä"></textarea>
             <input type="submit" value="Lähetä">
         </form>
     </div>
 </div>
+<script>
+    createFormInputList("test","bookTable")
+    $(function(){
+        $("#months").on("change", function(){
+            var year = $("#years").val()
+            changeDropdownValue("days", this.value, year)
+            changeDropdownDays(this.value, year)
+            $("#days").val(1)
+        });
+    });
+
+</script>
